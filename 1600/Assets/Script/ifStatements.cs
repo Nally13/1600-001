@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class gifStatements : MonoBehaviour {
+public class ifStatements : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
