@@ -3,9 +3,9 @@ using System.Collections;
 
 public class ifStatements : MonoBehaviour 
 {
-	float coffeeTemperature = 85.0f;
-	float hotLimitTemperature = 70.0f;
-	float coldLimitTemperature = 40.0f;
+	public float cellphoneBatteryLife = 100.0f;
+	public float okBatteryLife = 60.0f;
+	public float lowBatteryLife = 20.0f;
 
 	
 	// Update is called once per frame
@@ -14,22 +14,22 @@ public class ifStatements : MonoBehaviour
 		if(Input.GetKeyDown(KeyCode.Space))
 			TemperatureTest();
 
-		coffeeTemperature -= Time.deltaTime * 5f;
+		cellphoneBatteryLife -= Time.deltaTime * 5f;
 	}
 
 
 	void TemperatureTest()
 	{
-		if(coffeeTemperature > hotLimitTemperature) {
-			Debug.Log("Coffee is too hot.");
+		if(cellphoneBatteryLife > okBatteryLife) {
+			Debug.Log("Battery life is great.");
 		}
-		else if(coffeeTemperature < coldLimitTemperature) 
+		else if(cellphoneBatteryLife < lowBatteryLife) 
 		{
-			Debug.Log("Coffee is too cold.");
+			Debug.Log("Battery life is low.");
 		}
 		else
 		{
-			Debug.Log("Coffee is just right.");
+			Debug.Log("Battery life is OK.");
 		}
 	}
 }
