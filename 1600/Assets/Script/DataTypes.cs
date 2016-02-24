@@ -7,10 +7,10 @@ public class DataTypes : MonoBehaviour {
 	void Start () 
 	{
 		Vector3 pos = transform.position;
-		pos = new Vector3 (0, 3, 0);
+		pos = new Vector3 (0, 4, 0);
 
 
 		Transform tran = transform;
-		tran.position = new Vector3 (0, 3, 0);
+		tran.position = new Vector3 (0, 4, 0);
 	}
 }
