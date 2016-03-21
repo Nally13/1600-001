@@ -16,7 +16,9 @@ public class Arrays : MonoBehaviour
 	}
 }
 
-/*int[] myIntArray = new int[5];
+
+/*{
+	public int[] myIntArray = new int[5];
 
 	void Start ()
 	{
@@ -25,6 +27,5 @@ public class Arrays : MonoBehaviour
 		myIntArray [2] = 5;
 		myIntArray [3] = 913;
 		myIntArray [4] = 1000;
-		}
 	}
 }*/

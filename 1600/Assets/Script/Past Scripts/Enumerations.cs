@@ -19,10 +19,10 @@ public class Enumerations : MonoBehaviour
 			dir = Direction.South;
 		else if (dir == Direction.South)
 			dir = Direction.North;
-		/*else if (dir == Direction.East)
-			dir == Direction.West;
+		else if (dir == Direction.East)
+			dir = Direction.West;
 		else if (dir == Direction.West)
-			dir == Direction.East;*/
+			dir = Direction.East;
 
 		return dir;
 	}
