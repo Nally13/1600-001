@@ -31,3 +31,5 @@ public class Switchstatements : MonoBehaviour
 		}
 	}
 }
+
+//Code for quiz 1791
