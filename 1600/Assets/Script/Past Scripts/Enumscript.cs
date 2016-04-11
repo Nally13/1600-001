@@ -1,30 +1,31 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class Enumscript : MonoBehaviour {
+public class Enumscript : MonoBehaviour 
+{
 
-	public enum direction
-	{
+	public enum directions {
 		North,
 		South,
 		East,
 		West
 	}
 
-	void ChangeDirection (directions_d) {
+
+	void ChangeDirection(directions _d) {
 		currentDirection = _d;
 		print (currentDirection);
 	}
 
 	public directions currentDirection;
 
-	void OnMouseDown (){
+	void OnMouseDown () {
 
-		switch(currentDirection){
+		switch (currentDirection) {
 		case directions.North:
 			ChangeDirection (directions.South);
 			break;
-		
+
 		case directions.South:
 			ChangeDirection (directions.East);
 			break;
@@ -36,6 +37,7 @@ public class Enumscript : MonoBehaviour {
 		case directions.West:
 			ChangeDirection (directions.North);
 			break;
+
 		}
 	}
 }
