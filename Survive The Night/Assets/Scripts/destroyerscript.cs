@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.SceneManagement;
 
 public class destroyerscript : MonoBehaviour 
 {
@@ -7,7 +8,7 @@ public class destroyerscript : MonoBehaviour
 	{
 		if (other.tag == "Player") 
 		{
-			Debug.Break ();
+			SceneManager.LoadScene (1);
 			return;
 		}
 
