@@ -5,6 +5,8 @@ using UnityEngine.SceneManagement;
 public class GameoverScript : MonoBehaviour {
 
 	int score = 0;
+	public GUISkin mySkin;
+
 
 	void Start () 
 	{
@@ -13,12 +15,8 @@ public class GameoverScript : MonoBehaviour {
 
 	void OnGUI()
 	{
-		GUI.Label (new Rect (Screen.width / 2 - 40, 50, 100, 50), "GAME OVER");
+		GUI.skin = mySkin;
+		GUI.Label (new Rect (Screen.width / 2-250, 50, 500, 200), "Score: " + score);
 
-		GUI.Label (new Rect (Screen.width / 2 - 40, 300, 80, 30), "Score: " + score);
-		if (GUI.Button (new Rect (Screen.width / 2 - 100, 350, 200, 40), "I WON'T GIVE UP!")) 
-		{
-			SceneManager.LoadScene (0);
-		}
 	}
 }
